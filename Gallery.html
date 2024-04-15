@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Monuments-Gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>HM (Historical Monuments) Gellary </title>
+    <link rel="icon" type="photo/png" href="Pics/Nav/logo.png">
+    <link rel="stylesheet" href="lightbox.css">
+</head>
+<style>
+    .container{
+        /* width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 8%; */
+    }
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+        grid-gap: 10px;
+    }
+    .gallery img{
+        width: 100%;
+    }
+    .collapse ul li a{
+      font-style: italic;
+      font-weight: 700;
+    }
+    
+</style>
+
+<body>
+    
+  <div class="container" >
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler" style="background-color: black; height: 15px;"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarLeftAlignExample"
+          aria-controls="navbarLeftAlignExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        <i class="bi bi-chevron-bar-down"></i>
+        </button>
+    
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarLeftAlignExample">
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <img src="logo.png"  style="height: 90px;" alt="logo">
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active my-4" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link my-4" href="#">Gallery</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link my-4" href="index.html">Travel</a>
+            </li>
+           
+          </ul>
+          <!-- Left links -->
+          <!-- search box -->
+        <div class="input-group rounded mx-0 flex-wrap-reverse" id="search-box-div">
+          <input id="Search1" type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+          <span class="input-group-text border-0" id="search-addon">
+            <i class="fas fa-search" style="color: #000000;"></i>
+          </span>
+        </div>
+        </div>
+        <!-- Collapsible wrapper -->
+    
+      
+  
+        <script>
+         $('#Search1').focus(function(){
+              $(this).css("background-color","black");
+              $(this).css("color","white");
+              $(this).css("font-weight","700")
+          });
+  
+          $('#Search1').blur(function(){
+              $(this).css("background-color","white");
+              $(this).css("font-weight","500")
+          });
+      </script>
+  
+        <!-- Right elements -->
+        <div class="d-flex align-items-center my-3">
+          <!-- Icon -->
+          <!-- <a class="text-reset me-3" href="#">
+            <i class="fas fa-shopping-cart"></i>
+          </a> -->
+    
+          <!-- Notifications -->
+          <div class="dropdown">
+            <a
+              class="text-reset me-3 dropdown-toggle "
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              World
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end my-3"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+            <li>
+              <a class="dropdown-item" href="East.html">East</a>
+            </li>
+              <li>
+                <a class="dropdown-item" href="west.html">West</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="North.html">North</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="south.html">South</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="contact.html">Contact us</a>
+              </li>
+              <li style="border-top: 2px solid black;">
+                <a class="dropdown-item" id="wonn" href="/Magzine/index.html">7 Wonders</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    
+    <div class="gallery my-5">
+
+        <a href="https://c4.wallpaperflare.com/wallpaper/374/1005/261/pyramid-egypt-desert-architecture-wallpaper-preview.jpg" data-lightbox="modals" data-titel="caption1">
+            <img src="https://c4.wallpaperflare.com/wallpaper/374/1005/261/pyramid-egypt-desert-architecture-wallpaper-preview.jpg" >
+        </a>
+        <a href="https://blog.realtorspk.com/wp-content/uploads/2023/07/minar-e-pakistan-realtorspk.webp" data-lightbox="modals" data-titel="caption2">
+            <img src="https://blog.realtorspk.com/wp-content/uploads/2023/07/minar-e-pakistan-realtorspk.webp">
+        </a>
+        <a href="https://media.istockphoto.com/id/1339071089/photo/machu-picchu-inca-ruins.webp?b=1&s=170667a&w=0&k=20&c=PJNeWBcxJbxat8xPCPdKEhJ7CCuYU3A8idGKr_8088k=" data-lightbox="modals" data-titel="caption3">
+            <img src="https://media.istockphoto.com/id/1339071089/photo/machu-picchu-inca-ruins.webp?b=1&s=170667a&w=0&k=20&c=PJNeWBcxJbxat8xPCPdKEhJ7CCuYU3A8idGKr_8088k=">
+        </a>
+        <a href="https://c4.wallpaperflare.com/wallpaper/214/673/146/egypt-pyramid-filter-pyramids-of-giza-wallpaper-preview.jpg" data-lightbox="modals" data-titel="caption4">
+            <img src="https://c4.wallpaperflare.com/wallpaper/214/673/146/egypt-pyramid-filter-pyramids-of-giza-wallpaper-preview.jpg">
+        </a>
+        <a href="https://images7.alphacoders.com/536/536269.jpg" data-lightbox="modals" data-titel="caption5">
+            <img src="https://images7.alphacoders.com/536/536269.jpg"> 
+        </a>
+        <a href="https://planetofhotels.com/guide/sites/default/files/styles/paragraph__hero_banner__hb_image__1880bp/public/hero_banner/the-great-wall-of-china_optimized.jpg" data-lightbox="modals" data-titel="caption6">
+            <img src="https://planetofhotels.com/guide/sites/default/files/styles/paragraph__hero_banner__hb_image__1880bp/public/hero_banner/the-great-wall-of-china_optimized.jpg">
+        </a>
+        <a href="https://cdn.pixabay.com/photo/2017/06/12/08/29/victoria-memorial-2394784_1280.jpg" data-lightbox="modals" data-titel="caption7">
+            <img src="https://cdn.pixabay.com/photo/2017/06/12/08/29/victoria-memorial-2394784_1280.jpg"> 
+        </a>
+        <a href="https://t3.ftcdn.net/jpg/05/57/58/98/360_F_557589872_q8DW8Eq30pN9F72PO1XLvWRDsnUOgqgh.jpg" data-lightbox="modals" data-titel="caption8">
+            <img src="https://t3.ftcdn.net/jpg/05/57/58/98/360_F_557589872_q8DW8Eq30pN9F72PO1XLvWRDsnUOgqgh.jpg">
+        </a>
+        <a href="https://static.toiimg.com/photo/60776678/.jpg" data-lightbox="modals" data-titel="caption9">
+          <img src="https://static.toiimg.com/photo/60776678/.jpg">
+      </a>
+      <a href="https://www.geo.tv/assets/uploads/updates/2018-08-10/206941_8190170_updates.jpg" data-lightbox="modals" data-titel="caption10">
+        <img src="https://www.geo.tv/assets/uploads/updates/2018-08-10/206941_8190170_updates.jpg">
+    </a>
+    <a href="https://travel.home.sndimg.com/content/dam/images/travel/fullset/2012/05/23/26/us-memorials-monuments_ss_007.jpg.rend.hgtvcom.1280.960.suffix/1491583067829.jpeg" data-lightbox="modals" data-titel="caption11">
+      <img src="https://travel.home.sndimg.com/content/dam/images/travel/fullset/2012/05/23/26/us-memorials-monuments_ss_007.jpg.rend.hgtvcom.1280.960.suffix/1491583067829.jpeg">
+  </a>
+  <a href="https://frenchmoments.eu/wp-content/uploads/2015/05/Top-10-Monuments-of-France-featured-Image-copyright-French-Moments.jpg" data-lightbox="modals" data-titel="caption12">
+    <img src="https://frenchmoments.eu/wp-content/uploads/2015/05/Top-10-Monuments-of-France-featured-Image-copyright-French-Moments.jpg">
+</a>
+<a href="https://francetravelblog.com/wp-content/uploads/2020/04/Most-Famous-Monuments-In-France.jpg" data-lightbox="modals" data-titel="caption13">
+  <img src="https://francetravelblog.com/wp-content/uploads/2020/04/Most-Famous-Monuments-In-France.jpg">
+</a>
+<a href="https://www.pakistanhc.lk/wp-content/uploads/2018/10/Sleeve-Cover-Pakistan-Monument-Islamabad-a-national-monument-representing-the-nations-four-provinces-and-three-territories-Courtesy-WikiPedia-960x640.jpg" data-lightbox="modals" data-titel="caption14">
+  <img src="https://www.pakistanhc.lk/wp-content/uploads/2018/10/Sleeve-Cover-Pakistan-Monument-Islamabad-a-national-monument-representing-the-nations-four-provinces-and-three-territories-Courtesy-WikiPedia-960x640.jpg">
+</a>
+<a href="https://www.pakistanembassy.gr/uplds/57fb51adbc2d6.jpg" data-lightbox="modals" data-titel="caption15">
+  <img src="https://www.pakistanembassy.gr/uplds/57fb51adbc2d6.jpg">
+</a>
+<a href="https://i.dawn.com/primary/2016/10/57fb4fc3af4b9.jpg" data-lightbox="modals" data-titel="caption16">
+  <img src="https://i.dawn.com/primary/2016/10/57fb4fc3af4b9.jpg">
+</a>
+       
+     
+    </div>
+
+  </div>
+
+  
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
+></script>
+
+  <script src="lightbox-plus-jquery.js"></script>
+</body>
+
+</html>

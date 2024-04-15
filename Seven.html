@@ -1,0 +1,231 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<link rel="stylesheet" href="">
+<meta name="viewport" content="width = 1050, user-scalable = no" />
+<script type="text/javascript" src="Magzine/EX/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="Magzine/EX/modernizr.2.5.3.min.js"></script>
+<!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+rel="stylesheet">
+</head>
+<style>
+	body{
+		 background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1875%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M0 0 ' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M109.3 64.65L167.32 98.15L167.32 165.15L109.3 198.65L51.27 165.15L51.27 98.15zM109.3 466.65L167.32 500.15L167.32 567.15L109.3 600.65L51.27 567.15L51.27 500.15zM167.32 366.15L225.35 399.65L225.35 466.65L167.32 500.15L109.3 466.65L109.3 399.65zM225.35 466.65L283.37 500.15L283.37 567.15L225.35 600.65L167.32 567.15L167.32 500.15zM283.37 366.15L341.4 399.65L341.4 466.65L283.37 500.15L225.35 466.65L225.35 399.65zM399.42 165.15L457.45 198.65L457.45 265.65L399.42 299.15L341.4 265.65L341.4 198.65zM457.45 265.65L515.47 299.15L515.47 366.15L457.45 399.65L399.42 366.15L399.42 299.15zM399.42 366.15L457.45 399.65L457.45 466.65L399.42 500.15L341.4 466.65L341.4 399.65zM515.47 -35.85L573.5 -2.35L573.5 64.65L515.47 98.15L457.45 64.65L457.45 -2.35zM515.47 165.15L573.5 198.65L573.5 265.65L515.47 299.15L457.45 265.65L457.45 198.65zM573.5 265.65L631.52 299.15L631.52 366.15L573.5 399.65L515.47 366.15L515.47 299.15zM573.5 466.65L631.52 500.15L631.52 567.15L573.5 600.65L515.47 567.15L515.47 500.15zM631.52 165.15L689.55 198.65L689.55 265.65L631.52 299.15L573.5 265.65L573.5 198.65zM631.52 567.15L689.55 600.65L689.55 667.65L631.52 701.15L573.5 667.65L573.5 600.65zM747.57 -35.85L805.6 -2.35L805.6 64.65L747.57 98.15L689.55 64.65L689.55 -2.35zM747.57 366.15L805.6 399.65L805.6 466.65L747.57 500.15L689.55 466.65L689.55 399.65zM863.62 567.15L921.65 600.65L921.65 667.65L863.62 701.15L805.6 667.65L805.6 600.65zM1095.73 165.15L1153.75 198.65L1153.75 265.65L1095.73 299.15L1037.7 265.65L1037.7 198.65zM1095.73 366.15L1153.75 399.65L1153.75 466.65L1095.73 500.15L1037.7 466.65L1037.7 399.65zM1211.78 -35.85L1269.8 -2.35L1269.8 64.65L1211.78 98.15L1153.75 64.65L1153.75 -2.35zM1269.8 466.65L1327.83 500.15L1327.83 567.15L1269.8 600.65L1211.78 567.15L1211.78 500.15zM1327.83 -35.85L1385.85 -2.35L1385.85 64.65L1327.83 98.15L1269.8 64.65L1269.8 -2.35zM1327.83 366.15L1385.85 399.65L1385.85 466.65L1327.83 500.15L1269.8 466.65L1269.8 399.65zM1385.85 466.65L1443.88 500.15L1443.88 567.15L1385.85 600.65L1327.83 567.15L1327.83 500.15zM1501.9 466.65L1559.93 500.15L1559.93 567.15L1501.9 600.65L1443.88 567.15L1443.88 500.15z' stroke='rgba(185%2c 180%2c 180%2c 0.93)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1875'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+	}
+	.titel{
+		margin-left: 40%;
+		font-size: 2rem;
+	}
+	#nnnn{
+		/* height: 70px; */
+	}
+</style>
+<body>
+	<nav id="nnnn" class="navbar navbar-expand-lg navbar-light bg-light mx-5">
+		<!-- Container wrapper -->
+		<div class="container-fluid">
+		  <!-- Toggle button -->
+		  <button
+			class="navbar-toggler"
+			type="button"
+			data-mdb-toggle="collapse"
+			data-mdb-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent"
+			aria-expanded="false"
+			aria-label="Toggle navigation"
+		  >
+			<i class="fas fa-bars"></i>
+		  </button>
+	  
+		  <!-- Collapsible wrapper -->
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<!-- Navbar brand -->
+			<a class="navbar-brand mt-0 mt-lg-0" href="#">
+			  <img src="Pics/Nav/logo.png" alt="Logo" style="height: 90px;">
+			</a>
+			<!-- Left links -->
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+				<a class="nav-link" style="font-family: Arial Rounded MT Bold; color: #000000; font-size:18px;" href="index.html">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" style="font-family: Arial Rounded MT Bold; color: #000000; font-size:18px;" href="Gallery.html">Gallery</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link"  style="font-family: Arial Rounded MT Bold; color: #000000; font-size:18px;" href="index.html">Travel</a>
+			  </li>
+			</ul>
+			<!-- Left links -->
+
+			<!-- search box -->
+			<div class="input-group rounded mx-0 flex-wrap-reverse" id="search-box-div">
+				<input id="Search1" type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+				<span class="input-group-text border-0" id="search-addon">
+				  <i class="fas fa-search" style="color: #000000;"></i>
+				</span>
+			  </div>
+			  </div>
+			  <!-- Collapsible wrapper -->
+		  
+			
+		
+			  <script>
+			   $('#Search1').focus(function(){
+					$(this).css("background-color","black");
+					$(this).css("color","white");
+					$(this).css("font-weight","700")
+				});
+		
+				$('#Search1').blur(function(){
+					$(this).css("background-color","white");
+					$(this).css("font-weight","500")
+				});
+			</script>
+		
+			  <!-- Right elements -->
+			  <div class="d-flex align-items-center my-3">
+				<!-- Icon -->
+				<!-- <a class="text-reset me-3" href="#">
+				  <i class="fas fa-shopping-cart"></i>
+				</a> -->
+		  
+				<!-- Notifications -->
+				<div class="dropdown">
+				  <a
+					class="text-reset me-3 dropdown-toggle "
+					href="#"
+					id="navbarDropdownMenuLink"
+					role="button"
+					data-mdb-toggle="dropdown"
+					aria-expanded="false"
+				  >
+					World
+				  </a>
+				  <ul
+					class="dropdown-menu dropdown-menu-end my-3"
+					aria-labelledby="navbarDropdownMenuLink"
+				  >
+				  <li>
+					<a class="dropdown-item" href="East.html">East</a>
+				  </li>
+					<li>
+					  <a class="dropdown-item" href="west.html">West</a>
+					</li>
+					<li>
+					  <a class="dropdown-item" href="North.html">North</a>
+					</li>
+					<li>
+					  <a class="dropdown-item" href="south.html">South</a>
+					</li>
+					<li>
+					  <a class="dropdown-item" href="contact.html">Contact us</a>
+					</li>
+				  </ul>
+				</div>
+		  </div>
+		   
+		  <!-- Collapsible wrapper -->
+	  
+		
+	
+	
+		  <!-- Right elements -->
+		  <div class="d-flex align-items-center my-3">
+			<!-- Icon -->
+			<!-- <a class="text-reset me-3" href="#">
+			  <i class="fas fa-shopping-cart"></i>
+			</a> -->
+	  
+			
+		  </div>
+		  <!-- Right elements -->
+		</div>
+		<!-- Container wrapper -->
+	  </nav>
+	  <!-- Navbar -->
+
+	  <h5 class="container" style="text-align:center;font-family: forte; "> Magzine is a hover magzine We can go to the next page by clicking the corner of the page we can easily drag page & can go to the next page of the magzine. Hope you like it.</h5>
+<br>
+<div class="flipbook-viewport">
+	<div class="commet"><p></p></div>
+	
+
+	<div class="container" style="margin-top: 50px;">
+
+		<div class="flipbook">
+			<div class="page" style="background-image:url(Magzine/ADOBE-PHOTOSHOP/cover.jpg)"></div>
+			<div class="double" style="background-image:url(Magzine/ADOBE-PHOTOSHOP/adobe\ pg\ 1.jpg)"></div>
+			<div class="double" style="background-image:url(Magzine/ADOBE-PHOTOSHOP/adobe\ pg\ 2.jpg)"></div>
+			<div class="double" style="background-image:url(Magzine/ADOBE-PHOTOSHOP/adobe\ pg\ 3.jpg)"></div>
+			<div class="double" style="background-image:url(Magzine/ADOBE-PHOTOSHOP/adobe\ pg\ 4.jpg)"></div>
+			<div class="double" style="background-image:url(Magzine/ADOBE-PHOTOSHOP/adobe\ pg\ 5.jpg)"></div>
+			<div class="double" style="background-image:url(Magzine/ADOBE-PHOTOSHOP/adobe\ pg\ 6.jpg)"></div>
+			<div class="double" style="background-image:url(Magzine/ADOBE-PHOTOSHOP/adobe\ pg\ 7.jpg)"></div>
+			<div class="page" style="background-image:url(Magzine/ADOBE-PHOTOSHOP/End.jpg)"></div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+function loadApp() {
+
+	var flipbook = $('.flipbook');
+
+ 	// Check if the CSS was already loaded
+	
+	if (flipbook.width()==0 || flipbook.height()==0) {
+		setTimeout(loadApp, 10);
+		return;
+	}
+
+	$('.flipbook .double').scissor();
+
+	// Create the flipbook
+
+	$('.flipbook').turn({
+			// Elevation
+
+			elevation: 50,
+			
+			// Enable gradients
+
+			gradients: true,
+			
+			// Auto center this flipbook
+
+			autoCenter: true
+
+	});
+}
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['Magzine/LB/turn.min.js'],
+	nope: ['Magzine/LB/turn.html4.min.js'],
+	both: ['Magzine/LB/scissor.min.js', 'Magzine/css/double-page.css'],
+	complete: loadApp
+});
+
+</script>
+ <!-- MDB -->
+ <script
+ type="text/javascript"
+ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
+ ></script>
+
+</html>

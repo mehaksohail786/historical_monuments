@@ -1,0 +1,175 @@
+body{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1875%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M0 0 ' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M109.3 64.65L167.32 98.15L167.32 165.15L109.3 198.65L51.27 165.15L51.27 98.15zM109.3 466.65L167.32 500.15L167.32 567.15L109.3 600.65L51.27 567.15L51.27 500.15zM167.32 366.15L225.35 399.65L225.35 466.65L167.32 500.15L109.3 466.65L109.3 399.65zM225.35 466.65L283.37 500.15L283.37 567.15L225.35 600.65L167.32 567.15L167.32 500.15zM283.37 366.15L341.4 399.65L341.4 466.65L283.37 500.15L225.35 466.65L225.35 399.65zM399.42 165.15L457.45 198.65L457.45 265.65L399.42 299.15L341.4 265.65L341.4 198.65zM457.45 265.65L515.47 299.15L515.47 366.15L457.45 399.65L399.42 366.15L399.42 299.15zM399.42 366.15L457.45 399.65L457.45 466.65L399.42 500.15L341.4 466.65L341.4 399.65zM515.47 -35.85L573.5 -2.35L573.5 64.65L515.47 98.15L457.45 64.65L457.45 -2.35zM515.47 165.15L573.5 198.65L573.5 265.65L515.47 299.15L457.45 265.65L457.45 198.65zM573.5 265.65L631.52 299.15L631.52 366.15L573.5 399.65L515.47 366.15L515.47 299.15zM573.5 466.65L631.52 500.15L631.52 567.15L573.5 600.65L515.47 567.15L515.47 500.15zM631.52 165.15L689.55 198.65L689.55 265.65L631.52 299.15L573.5 265.65L573.5 198.65zM631.52 567.15L689.55 600.65L689.55 667.65L631.52 701.15L573.5 667.65L573.5 600.65zM747.57 -35.85L805.6 -2.35L805.6 64.65L747.57 98.15L689.55 64.65L689.55 -2.35zM747.57 366.15L805.6 399.65L805.6 466.65L747.57 500.15L689.55 466.65L689.55 399.65zM863.62 567.15L921.65 600.65L921.65 667.65L863.62 701.15L805.6 667.65L805.6 600.65zM1095.73 165.15L1153.75 198.65L1153.75 265.65L1095.73 299.15L1037.7 265.65L1037.7 198.65zM1095.73 366.15L1153.75 399.65L1153.75 466.65L1095.73 500.15L1037.7 466.65L1037.7 399.65zM1211.78 -35.85L1269.8 -2.35L1269.8 64.65L1211.78 98.15L1153.75 64.65L1153.75 -2.35zM1269.8 466.65L1327.83 500.15L1327.83 567.15L1269.8 600.65L1211.78 567.15L1211.78 500.15zM1327.83 -35.85L1385.85 -2.35L1385.85 64.65L1327.83 98.15L1269.8 64.65L1269.8 -2.35zM1327.83 366.15L1385.85 399.65L1385.85 466.65L1327.83 500.15L1269.8 466.65L1269.8 399.65zM1385.85 466.65L1443.88 500.15L1443.88 567.15L1385.85 600.65L1327.83 567.15L1327.83 500.15zM1501.9 466.65L1559.93 500.15L1559.93 567.15L1501.9 600.65L1443.88 567.15L1443.88 500.15z' stroke='rgba(185%2c 180%2c 180%2c 0.93)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1875'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+
+  @media (max-width:850px){
+    #Wonders-head{
+      display: none;
+    }
+  }
+
+  @media(max-width: 375){
+    #carouselExampleCaptions{
+      height: 50px;
+    }
+  }
+  @media(max-width:415px){
+    .card .card-body p{
+      display: none;
+    }
+    .card-back p{
+      display: none;
+    }
+  }
+  
+  #nnnn{
+    /* height: 60px; */
+    margin-top: 10px;
+    position: absolute;
+    z-index: 1;
+    width:auto ;
+    filter: drop-shadow(5px 5px 5px rgb(255, 221, 221));
+    border-radius:93% 7% 90% 10% / 33% 39% 61% 69% ; height: 90px;
+  }
+  .dropdown ul{
+    border-radius: 20%;
+  }
+  
+  .dropdown ul li {
+    text-align: center; 
+    transition: 1.5s ease;
+  }
+  .dropdown ul li:hover a{
+    background:linear-gradient(to right, rgb(0, 53, 53) , white);
+  }
+  .dropdown ul li a:hover{
+    color: white;
+    font-weight: 700;
+  }
+  #carouselExampleCaptions{
+    position: relative;
+    filter: drop-shadow(10px 10px 10px gray);
+    border-radius: 10px;
+  }
+  #cr-img{
+    border-radius: 20px;
+  }
+  .carousel-inner{
+    border-radius: 20px;
+  }
+  .heading{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .heading h1{
+    font-family: Goudy Stout;
+  }
+  .vr-name{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-size: 2rem;
+    font-family: Forte;
+    filter: drop-shadow(10px 15px 10px black);
+  }
+ 
+.visited-places{
+  border-radius: 30%;
+  font-size: 2rem;
+  color: rgb(16, 82, 82);
+  font-family: Forte;
+  filter: drop-shadow(10px 10px 10px rgb(103, 210, 224));
+}
+.visited-places h1{
+  text-align: center;
+  align-items: center;
+  margin-top: 30%;
+}
+@media (max-width:800px){
+  .visited-places{
+    display: none;
+  }
+}
+#heading-wanna ,#heading-wanna-modal{
+  text-align: center;
+  font-size: 60px;
+  font-family: Forte;
+  color: black;
+  filter: drop-shadow(5px 10px 8px gray);
+}
+
+
+
+#Wonders-head{
+  font-size: 5rem;
+  color: rgb(16, 82, 82);
+  font-family: Forte;
+  filter: drop-shadow(10px 10px 10px rgb(103, 210, 224));
+}
+
+#crd-one ,#crd-four,#crd-five{
+ width: 23rem;
+}
+#crd-two , #crd-three,#crd-six{
+  width: 35rem;
+}
+
+.card:Hover .card-inner{
+  transform: rotateY(180deg);
+}
+.card-back{
+  transform: rotateY(180deg);
+}
+
+#modl-btn{
+  align-items: center;
+  text-align: center;
+  margin-left: 40%;
+  padding: 30px;
+  filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+}
+
+.modal-content{
+  width: 25rem;
+}
+.modal-dialog{
+ align-items: center;
+}
+.modal-body{
+  height: 20rem;
+}
+.modal-body img{
+ height: 25rem; 
+}
+.modal-title{
+  font-size: 2rem;
+  font-family:Verdana, Geneva, Tahoma;
+}
+.modal-title span{
+  color: rgba(255, 0, 234, 0.678);
+  filter: drop-shadow(10px 10px 7px rgb(0, 0, 0));
+  font-family: forte;
+}
+.modal-icons i{
+ font-size: 2rem;
+ cursor: pointer;
+}
+#staticBackdropLabel{
+  font-family: forte;
+}
+
+/* footer */
+
+#Bottom-card{
+  overflow: hidden;
+  filter: drop-shadow(7px 7px 7px rgb(0, 189, 196));
+}
+#Bottom-card img{
+  transition: 0.7s ease;
+}
+#Bottom-card img:hover{
+  transform: scale(1.2);
+}

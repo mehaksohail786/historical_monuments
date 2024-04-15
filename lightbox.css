@@ -1,0 +1,209 @@
+body{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1875%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M0 0 ' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M109.3 64.65L167.32 98.15L167.32 165.15L109.3 198.65L51.27 165.15L51.27 98.15zM109.3 466.65L167.32 500.15L167.32 567.15L109.3 600.65L51.27 567.15L51.27 500.15zM167.32 366.15L225.35 399.65L225.35 466.65L167.32 500.15L109.3 466.65L109.3 399.65zM225.35 466.65L283.37 500.15L283.37 567.15L225.35 600.65L167.32 567.15L167.32 500.15zM283.37 366.15L341.4 399.65L341.4 466.65L283.37 500.15L225.35 466.65L225.35 399.65zM399.42 165.15L457.45 198.65L457.45 265.65L399.42 299.15L341.4 265.65L341.4 198.65zM457.45 265.65L515.47 299.15L515.47 366.15L457.45 399.65L399.42 366.15L399.42 299.15zM399.42 366.15L457.45 399.65L457.45 466.65L399.42 500.15L341.4 466.65L341.4 399.65zM515.47 -35.85L573.5 -2.35L573.5 64.65L515.47 98.15L457.45 64.65L457.45 -2.35zM515.47 165.15L573.5 198.65L573.5 265.65L515.47 299.15L457.45 265.65L457.45 198.65zM573.5 265.65L631.52 299.15L631.52 366.15L573.5 399.65L515.47 366.15L515.47 299.15zM573.5 466.65L631.52 500.15L631.52 567.15L573.5 600.65L515.47 567.15L515.47 500.15zM631.52 165.15L689.55 198.65L689.55 265.65L631.52 299.15L573.5 265.65L573.5 198.65zM631.52 567.15L689.55 600.65L689.55 667.65L631.52 701.15L573.5 667.65L573.5 600.65zM747.57 -35.85L805.6 -2.35L805.6 64.65L747.57 98.15L689.55 64.65L689.55 -2.35zM747.57 366.15L805.6 399.65L805.6 466.65L747.57 500.15L689.55 466.65L689.55 399.65zM863.62 567.15L921.65 600.65L921.65 667.65L863.62 701.15L805.6 667.65L805.6 600.65zM1095.73 165.15L1153.75 198.65L1153.75 265.65L1095.73 299.15L1037.7 265.65L1037.7 198.65zM1095.73 366.15L1153.75 399.65L1153.75 466.65L1095.73 500.15L1037.7 466.65L1037.7 399.65zM1211.78 -35.85L1269.8 -2.35L1269.8 64.65L1211.78 98.15L1153.75 64.65L1153.75 -2.35zM1269.8 466.65L1327.83 500.15L1327.83 567.15L1269.8 600.65L1211.78 567.15L1211.78 500.15zM1327.83 -35.85L1385.85 -2.35L1385.85 64.65L1327.83 98.15L1269.8 64.65L1269.8 -2.35zM1327.83 366.15L1385.85 399.65L1385.85 466.65L1327.83 500.15L1269.8 466.65L1269.8 399.65zM1385.85 466.65L1443.88 500.15L1443.88 567.15L1385.85 600.65L1327.83 567.15L1327.83 500.15zM1501.9 466.65L1559.93 500.15L1559.93 567.15L1501.9 600.65L1443.88 567.15L1443.88 500.15z' stroke='rgba(185%2c 180%2c 180%2c 0.93)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1875'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+body.lb-disable-scrolling {
+  overflow: hidden;
+}
+
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  display: none;
+}
+
+.lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  text-align: center;
+  line-height: 0;
+  font-weight: normal;
+  outline: none;
+}
+
+.lightbox .lb-image {
+  display: block;
+  height: auto;
+  max-width: inherit;
+  max-height: none;
+  border-radius: 3px;
+
+  /* Image border */
+  border: 4px solid white;
+}
+
+.lightbox a img {
+  border: none;
+}
+
+.lb-outerContainer {
+  position: relative;
+  *zoom: 1;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 4px;
+
+  /* Background color behind image.
+     This is visible during transitions. */
+  background-color: white;
+}
+
+.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lb-loader {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+}
+
+.lb-cancel {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  background: url(../images/loading.gif) no-repeat;
+}
+
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.lb-container > .nav {
+  left: 0;
+}
+
+.lb-nav a {
+  outline: none;
+  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+}
+
+.lb-prev, .lb-next {
+  height: 100%;
+  cursor: pointer;
+  display: block;
+}
+
+.lb-nav a.lb-prev {
+  width: 34%;
+  left: 0;
+  float: left;
+  background: url(../images/prev.png) left 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-prev:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.lb-nav a.lb-next {
+  width: 64%;
+  right: 0;
+  float: right;
+  background: url(../images/next.png) right 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-next:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.lb-dataContainer {
+  margin: 0 auto;
+  padding-top: 5px;
+  *zoom: 1;
+  width: 100%;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lb-data {
+  padding: 0 4px;
+  color: #ccc;
+}
+
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em;
+}
+
+.lb-data .lb-caption {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+.lb-data .lb-caption a {
+  color: #4ae;
+}
+
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  padding-bottom: 1em;
+  font-size: 12px;
+  color: #999999;
+}
+
+.lb-data .lb-close {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background: url(../images/close.png) top right no-repeat;
+  text-align: right;
+  outline: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.lb-data .lb-close:hover {
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
